@@ -1,3 +1,9 @@
+name: Simple Job
+
+on:
+  push:
+    branches: [ "main" ]
+
 jobs:
   build-and-test:
     runs-on: ubuntu-latest
@@ -10,6 +16,9 @@ jobs:
         uses: actions/setup-python@v2
         with:
           python-version: 3.x
+
+      - name: List files
+        run: ls -R
 
       - name: Install dependencies
         run: |
