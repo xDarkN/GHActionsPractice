@@ -1,15 +1,11 @@
 const assert = require('assert');
 
-describe('Sample Test Suite', () => {
-  it('should add numbers correctly', () => {
-    const sum = 2 + 3;
-    assert.strictEqual(sum, 5);
+describe('Simple Test Suite', () => {
+  it('should pass if true is true', () => {
+    assert.strictEqual(true, true);
   });
 
-  it('should multiply numbers correctly', () => {
-    const product = 4 * 6;
-    assert.strictEqual(product, 24);
+  it('should fail if true is not false', () => {
+    assert.notStrictEqual(true, false);
   });
-
-  // Add more test cases as needed
 });
