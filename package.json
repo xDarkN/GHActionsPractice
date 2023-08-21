@@ -2,8 +2,7 @@
     "name": "simple-app",
     "version": "1.0.0",
     "scripts": {
-      "build": "npm install",
-      "test": "npm test"
+        "build": "npm install",
+        "test": "npm test"
     }
-  }
-  
+}
